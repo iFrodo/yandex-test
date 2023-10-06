@@ -1,109 +1,44 @@
-.player {
-  position: relative;
-  display: block;
-  width: rem(660px);
-  height: rem(409px);
-    @include tablets{
-    width: rem(594px);
-    height: rem(351px);
-  }
-  @include phones{
-    width: rem(394px);
-    height: rem(233px);
-  }
-}
-
-.player__wrapper {
-  width: 100%;
-  height: 100%;
-  outline: none;
-  display: block;
-  position: relative;
-}
-.player__elem{
-  width: 100%;
-  height: 100%;
-}
 
 .player-section__container {
-  display: flex;
-  justify-content: center;
+  columns: 2;
+//   flex-direction: column;
+//   width: 407px;
+// columns: 2;
 }
+.player-section__title{
 
-.player-section__title {
-
-  text-align: unset;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.875rem;
-  color: inherit;
+font-size: 38px;
+font-style: normal;
+font-weight: 900;
+line-height: 100%; /* 48px */
+letter-spacing: -0.96px;
+margin-bottom: 48px;
 }
+// .player-section__title {
+// width: 407px;
 
-.player__splash {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  cursor: pointer;
-  background: url(../img/shortboard.jpeg) center center / cover no-repeat;
-
-  &--active {
-    display: none;
-  }
+// }
+.player-section__img{
+  width: 542px;
 }
-
-.player__controls {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: rem(35px);
-  background: #3e3e3e;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 rem(25px);
-  color: white;
-}
-
-.player__start {
-  width: rem(20px);
-  height: rem(16px);
-  cursor: pointer;
-  // fill: white;
-  background: url(../img/play.svg)center center / cover no-repeat;
-
-  // &:hover {
-  //   fill: #3e3e3e
-  // }
-}
-
-.player__start--paused {
-  background: url(../img/pause-svgrepo-com.svg)center center / cover no-repeat;
-}
-
-.player__playback {
-  flex:1;
-  margin: 0 rem(20px);
-  height: rem(4px);
-  cursor: pointer;
+.first{
   position: relative;
-
-  background: url(../img/bar.svg)center center / cover no-repeat;
+  top: -17px;
+  display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+}
+.second{
+  position: relative;
+  top: -150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
-.player__playback-button {
-  width: rem(15px);
-  height: rem(15px);
-  background: inherit;
-  border-radius: 50%;
-  position: absolute;
-  top: rem(-5px);
-  left: 0;
-
-}
-
-.player__duration {
-  color: inherit;
-}
