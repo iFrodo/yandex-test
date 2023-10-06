@@ -1,0 +1,154 @@
+// ----------------info-block-------------------------//
+.info {
+  align-items: stretch;
+  position: relative;
+  // background: url(../img/bacground-main.jpeg) center center / cover no-repeat;
+  color: #21201F;
+
+  @include tablets {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: rem(91px);
+      background-color: #1968b1;
+    }
+  }
+
+
+  .info__container {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    padding-bottom: 6.3125rem;
+
+    .info__background {
+      position: absolute;
+      top: 45px;
+      left: 283px;
+      width: rem(744px);
+      height: rem(618px);
+      // transform: rotate(-8.008deg);
+      z-index: -12222;
+    }
+
+    @include tablets {
+      padding-bottom: 0;
+    }
+  }
+
+  .info__link-logo {
+    margin-top: rem(127px);
+    margin-bottom: rem(57.94px);
+  }
+
+  .info__logo {
+    width: rem(176px);
+    height: rem(50.129px);
+
+  }
+
+  .info__title {
+    color: inherit;
+    max-width: rem(420px);
+    margin-bottom: 32px;
+    font-size: rem(72px);
+
+    @include tablets {
+      text-align: center;
+      max-width: none;
+      margin-bottom: rem(9px);
+    }
+
+    @include phones {
+      font-size: rem(40px);
+      line-height: rem(36px);
+      margin-bottom: rem(12px);
+    }
+  }
+
+  .info__text {
+    font-size: rem(24px);
+    font-weight: 500;
+    line-height: 122%;
+    /* 31.2px */
+    width: rem(406px);
+    margin-bottom: rem(38px);
+
+    @include tablets {
+      margin-bottom: rem(44px);
+    }
+
+    @include phones {
+      font-size: rem(18px);
+      line-height: rem(20px);
+      margin-bottom: rem(44px);
+    }
+  }
+
+  .info__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .info__item {
+    display: flex;
+    align-items: center;
+    margin-right: rem(33px);
+
+    .info:not(:last-child) {
+      margin-right: 1.875rem;
+    }
+  }
+
+  .info__about {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.125rem;
+    max-width: rem(90px);
+  }
+
+  .info__ico {
+    margin-right: 0.9375rem;
+    width: rem(35px);
+    height: rem(35px);
+  }
+
+  .info__body {
+    @include tablets {
+      padding-top: rem(111px);
+      text-align: center;
+    }
+
+    @include phones {
+      padding-top: rem(34px);
+    }
+  }
+
+  .info__desc {
+    @include tablets {
+      visibility: hidden;
+    }
+  }
+.info__text-circle{
+  font-size: rem(28px);
+  font-weight: 900;
+  position: absolute;
+  bottom: rem(382px);
+  right: rem(270px);
+}
+  .circle {
+    display: block;
+    overflow: visible;
+    width: rem(52px);
+  }
+
+  .circle path {
+    fill: none;
+  }
+
+
+}

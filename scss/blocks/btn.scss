@@ -1,0 +1,33 @@
+.btn {
+  padding: rem(24px) rem(48px);
+  border-radius: rem(36px);
+  background: #FFDE40;
+  box-shadow: 0px rem(4px) rem(98px) rem(0px) rgba(255, 222, 64, 0.59);
+  color: #21201F;
+  text-align: right;
+
+
+
+  font-size: rem(24px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: rem(22px);
+  cursor: pointer;
+  border: 0.0625rem solid transparent;
+  // text-transform: uppercase;
+  &--theme-transperent {
+    background: transparent;
+    color: #fff;
+    text-transform: none;
+    padding: 1.3125rem 0.6875rem;
+  }
+  &:hover {
+    background: #ffd417a8;
+  }
+}
+.info__button {
+  @include phones {
+    font-size: rem(19px);
+    line-height: rem(18px);
+  }
+}
